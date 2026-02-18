@@ -1,0 +1,40 @@
+<!--
+Source - https://stackoverflow.com/a/68678524
+Posted by Iman Shafiei
+Retrieved 2026-02-18, License - CC BY-SA 4.0
+-->
+
+<link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@2.21.2/dist/bootstrap-vue.css" />
+
+<script src="https://unpkg.com/vue@2.6.12/dist/vue.min.js"></script>
+<script src="https://unpkg.com/bootstrap-vue@2.21.2/dist/bootstrap-vue.min.js"></script>
+
+<div id="app">
+  <b-pagination v-model="currentPage" :total-rows="rows" :per-page="perPage" page-class="customPage"></b-pagination>
+</div>
+/*
+Source - https://stackoverflow.com/a/68678524
+Posted by Iman Shafiei
+Retrieved 2026-02-18, License - CC BY-SA 4.0
+*/
+
+.customPage.page-item.active .page-link {
+  background-color: red;
+  border-color: red;
+}
+ Source - https://stackoverflow.com/a/68678524
+ Posted by Iman Shafiei
+ Retrieved 2026-02-18, License - CC BY-SA 4.0
+
+new Vue{
+  el: '#app',
+  data() {
+    return {
+      rows: 100,
+      perPage: 10,
+      currentPage: 1
+    }
+  },
+
+}

@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Cards</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+
+</script>
+    </head>
+    <body>
+                <div class="container">
+            <ul class="Pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#">previous</a>
+                </li>
+
+                <li class="page-item">
+                    <a class="page-link" href="#">1</a>
+                </li>
+
+                <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                </li>
+
+                <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                </li>
+
+                <li class="page-item">
+                    <a class="page-link" href="#">next</a>
+                </li>
+
+                <div id="app">
+                  <b-pagination v-model="currentPage" :total-rows="rows" :per-page="perPage" page-class="customPage"></b-pagination>
+                </div>
+            </ul>
+        </div>
+    </body>
+</html
