@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            function findSum(){
+                var i; var sum =0;
+                for(i=0; i<arguments.length; i++){
+                    sum = sum + arguments[i];
+                }
+                return sum;
+            }
+
+            document.getElementById("demo").innerHTML = findSum(10, 4, 2, 50, 3);
+        </script>
+    </body>
+</html>
