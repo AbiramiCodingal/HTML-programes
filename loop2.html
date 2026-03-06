@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Methods and Loops in JavaScript</title>
+</head>
+<body>
+
+<h2>JavaScript Methods and Loops Project</h2>
+
+<button onclick="generateNumbers()">Generate Output</button>
+
+<p id="numbers"></p>
+<p id="date"></p>
+<p id="rounded"></p>
+
+<script>
+
+function generateNumbers() {
+
+    // 1. Random set of numbers using loop
+    let randomNumbers = "";
+    
+    for (let i = 0; i < 5; i++) {
+        let num = Math.random() * 100; // random number between 0-100
+        randomNumbers += num.toFixed(2) + " ";
+    }
+
+    document.getElementById("numbers").innerHTML =
+        "Random Numbers: " + randomNumbers;
+
+
+    // 2. Current date using built-in Date method
+    let today = new Date();
+    document.getElementById("date").innerHTML =
+        "Current Date: " + today.toDateString();
+
+
+    // 3. Rounded random number
+    let roundedNum = Math.round(Math.random() * 100);
+    document.getElementById("rounded").innerHTML =
+        "Rounded Random Number: " + roundedNum;
+}
+
+</script>
+
+</body>
+</html>
