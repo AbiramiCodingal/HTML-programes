@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Map</h1>
+        <div id="result"></div>
+        <script>
+            var a = [12,34,56,1,89,23,78]
+            function myfunction(a){
+                return a * 10
+            }
+            var new_array = a.map(myfunction)
+            document.getElementById("result").innerHTML = "The result is " +new_array
+        </script>
+        
+    </body>
+</html>
