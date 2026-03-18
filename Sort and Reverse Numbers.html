@@ -1,0 +1,26 @@
+<html lang="en">
+    <head>
+        <title>Array Sorting</title>
+    </head>
+    <body>
+        <h1>Array Sorting</h1>
+
+        <button onclick = "asc()">Ascending</button>
+        <button onclick = "desc()">Descending</button>
+        <div id="result"></div>
+        <script>
+            var points = [ 12,34,56,1,89,23,78]
+            document.getElementById("result").innerHTML = points
+            function asc(){
+                points.sort(function(a,b)
+                {return a - b})
+                document.getElementById("result").innerHTML = points
+            }
+            function desc(){
+                points.sort(function(a,b)
+                {return b - a})
+                document.getElementById("result").innerHTML = points
+            }
+        </script>
+    </body>
+</html>
