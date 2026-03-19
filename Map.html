@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> mapping and sorting</title>
+    </head>
+    <body>
+        <h1>mapping and sorting</h1>
+        <script>
+            var a = [12,34,56,356,23]
+            function mapfunction(a){
+                return a*3
+            }
+            newarr = a map(mapfunction)
+            document.write("the first array",a + "<br>")
+            document.writeln("the new array")
+            document.writeln(newarr + "<br>")
+            document.write("ascending aorder")
+            function asc(){
+                
+                newarr.sort(function(a,b){return a - b})
+                document.write(newarr)
+            }
+            asc()
+        </script>
+    </body>
+</html>
