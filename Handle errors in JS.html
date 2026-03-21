@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Handle errors in JS</title>
+
+    </head>
+    <style>
+        body{
+            background-color: aquamarine;
+            font-size: 24;
+            color: black;
+            text-align: center;
+        }
+        h1::before{
+            content: "💖"
+        }
+        h1::after{
+            content: "💖"
+        }
+    </style>
+    <body>
+        <h1>Handle errors in JS</h1>
+        <div id="result"></div>
+        <script>
+            try{
+                var a = 30
+                var b = 0
+                var c = ab
+                document.getElementById("result").innerHTML = "The addition of 20 , 30 , 40 , is " + add(20, 30, 40)
+            }
+            const add = (a,b,c) =>  a+b+c
+            document.getElementById("result").innerHTML = "The addition of 20 , 30 , 40 , is " + add(20, 30, 40)
+        </script>
+    </body>
+</html>
