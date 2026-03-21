@@ -24,7 +24,7 @@
             try{
                 var a = 30
                 var b = 0
-                var c = ab
+                var c = a/b
                 document.getElementById("result").innerHTML = "The answer is " + c
             }
             catch(err)
