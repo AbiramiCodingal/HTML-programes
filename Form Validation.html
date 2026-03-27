@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Form Validation</title>
+    </head>
+    <body>
+        <h1>Form Validation</h1>
+        <form name="myform" onsubmit="validataform()">
+            Name : <input type="text" name="myname">
+            <br><br>
+            <input type="submit">
+        </form>
+        <script>
+            var x = document.forms["myform"]["myname"].value
+            if (x == "")
+        {
+            alert("Name had to be filled")
+        }
+        </script>
+    </body>
+</html>
