@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Palindrom </title>
+    </head>
+    <body>
+        <h1>Palindrom App</h1>
+        <script>
+            function Palindrom(string){
+                var input = string.replace(/[^a-z0-9]/ig,"").toLowerCase()
+                var revinput = input.split("").reverse().join("")
+
+                if (revinput == input){
+                    document.write(string,"is a palindrom")
+                }
+                else {
+                    document.write(string," is not a palindrom")
+                }
+            }
+            Palindrom("notebook")
+        </script>
+    </body>
+</html>
