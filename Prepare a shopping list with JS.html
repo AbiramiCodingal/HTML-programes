@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Add your list to do</title>
+    </head>
+    <body>
+        <h1>Prepare a shopping list with JS</h1>
+        <form id="myform">
+            <input id="myinput" type="text">
+            <button>Add</button>
+        </form>
+        <ul id="myitem"></ul>
+        <script>
+            var myform1 = document.getElementById("myform")
+            var myinput1 = document.getElementById("myinput")
+            var myitem1 = document.getElementById("myitem")
+
+            myform1.addEventListener("submit",function(event){
+                event.preventDefault()
+                createitem(myinput1.value)
+
+            })
+            function createitem(input){
+                var item = `<li> ${input} <button onclick = "dele(this)"> Delete </button>`
+                    myitem1.insertAdjacentHTML("beforeend",item)
+                    myinput1.value = " "
+                    myinput1.focus()
+            }
+            function dele(element){
+                element.parentElement.remove()
+            }
+        </script>
+    </body>
+</html>
