@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <button onclick="showdat();">Click me</button>
+        <div id="dt"></div>
+        <script>
+            function showdat(){
+
+                 var dt = new Date()
+                 var y = dt.getFullYear()
+                 var m = dt.getMonth()+1
+                 var D = dt.getDate()
+                 document.getElementById("dt").innerHTML =  D + "/" +m + "/" + y
+            }
+        </script>
+    </body>
+</html>
