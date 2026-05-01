@@ -9,6 +9,7 @@
             margin: 0px;
             background-color: aquamarine;
             font-family:'Times New Roman', Times, serif ;
+            text-align: center;
         
         }
         .topnav{
@@ -31,6 +32,17 @@
             background-color: darkblue;
             color: aqua;
         }
+        .carousel-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+        }
+        .myslides{
+            display: none;
+            max-width: 100%;
+            max-height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -40,5 +52,29 @@
         <a href="Gallery.html">Gallery</a>
         <a href="Contant.html">Contact</a>
     </div>
+    <h1>Flower</h1>
+    <div class="carousel-container">
+        <img class="myslides" src="pic1flo.jpg" width="230px" border=3 height="300px" alt="Flower">
+        <img class="myslides" src="pic2flo.jpg" width="230px" border=3 height="300px" alt="Flower">
+        <img class="myslides" src="pic3flo.jpg" width="230px" border=3 height="300px" alt="Flower">
+        <img class="myslides" src="pic4flo.jpg" width="230px" border=3 height="300px" alt="Flower">
+    </div>
+    <script>
+        var Index = 0;
+        function carousel(){
+            var i;
+            var x = document.getElementsByClassName("myslides")
+            for (i = 0; i<x.length;i++){
+                x[i].style.display = "none"
+            }
+            Index++
+            if (Index > x.length){
+                Index = 1
+            }
+            x[Index-1].style.display = "block"
+            setTimeout(carousel,2000)
+        }
+        carousel()
+    </script>
 </body>
 </html>
