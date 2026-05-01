@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RollingDice</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: brown;
+        }
+        #Dice {
+            font-size:  320px; 
+            color: aquamarine;
+        }
+        #Dice:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click on the Dice...</h1>
+    <div id="Dice" onclick="stopstart()"></div>
+    <script>
+        var Dice;
+        var Dices = ["&#9856;","&#9857;","&#9858;","&#9859;","&#9860;","&#9861;"];
+        var stopped = true;
+        var t;
+
+        function change(){
+            var random = Math.floor(Math.random()*6);
+            Dice.innerHTML = Dices[random];
+        }
+        function stopstart(){
+            if(stopped) {
+                stopped = false;
+                
+                t = setInterval(change,2000);
+            } else{
+                clearInterval(t);
+                stopped = true;
+            }
+        }
+        window.onload = function() {
+            Dice = document.getElementById("Dice");
+            Dice.innerHTML= Dices[0]
+            stopstart();
+        }
+    </script>
+</body>
+</html>
