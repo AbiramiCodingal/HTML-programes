@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+            body{
+            margin: 0px;
+            background-color: aquamarine;
+            font-family:'Times New Roman', Times, serif ;
+            text-align: center;
+        
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: black;
+        }
+        .topnav a{
+            float: left;
+            color: paleturquoise;
+            text-align: center;
+            padding: 12px 10px;
+            font-size: 17px;
+            text-decoration: none;
+        }
+        .topnav a:hover{
+            color: blueviolet;
+            font-size: 20px;
+        }
+        .topnav a.active {
+            background-color: darkblue;
+            color: aqua;
+        }
+        .small{
+            border: 1px white;
+            width: 50px;
+            height: 50px;
+        }
+        .Gallery{
+            position: fixed;
+            top: 40%;
+            left: 40%;
+            border: 10px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="Index.html" >Home</a>
+        <a href="AboutUs.html">AboutUs</a>
+        <a href="Gallery.html" class="active">Gallery</a>
+        <a href="Contant.html">Contact</a>
+    </div>
+    <div class="Gallery">
+        <table>
+            <tr><td>
+                <a href="pic1flo.jpg" target="_blank">
+                    <img class="small" src="pic1flo.jpg" alt="pic1flo" border = 3>
+                </a>
+                <a href="pic2flo.jpg" target="_blank">
+                    <img class="small" src="pic2flo.jpg" alt="pic2flo" border = 3>
+                </a>
+                <a href="pic3flo.jpg" target="_blank">
+                    <img class="small" src="pic3flo.jpg" alt="pic3flo" border = 3>
+                </a>
+            </td>
+
+            </tr>
+                        <tr><td>
+                <a href="pic4flo.jpg" target="_blank">
+                    <img class="small" src="pic4flo.jpg" alt="pic4flo" border = 3>
+                </a>
+                <a href="pic5flo.jpg" target="_blank">
+                    <img class="small" src="pic5flo.jpg" alt="pic5flo" border = 3>
+                </a>
+                <a href="pic1flo.jpg" target="_blank">
+                    <img class="small" src="pic1flo.jpg" alt="pic1flo" border = 3>
+                </a>
+            </td>
+
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
