@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>About</title>
+        <style>
+        body, html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav{
+            overflow: hidden;
+            background-color: black;
+        }
+        .topnav a{
+            float: left;
+            color: paleturquoise;
+            text-align: center;
+            padding: 12px 10px;
+            font-size: 17px;
+            text-decoration: none;
+        }
+        .topnav a:hover{
+            color: blueviolet;
+            font-size: 20px;
+        }
+        .topnav a.active {
+            background-color: black;
+            color: aqua;
+        }
+        .bg-image {
+            height: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .img1 { background-image: url("food3.jpg");}
+        .img2 { background-image: url("food6.jpg");}
+        .img3 { background-image: url("food8.jpg");}
+        .img4 { background-image: url("food9.jpg");}
+        .img5 { background-image: url("food10.jpg");}
+
+        .bg-text {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+            font-weight: bold;
+            font-size: 80px;
+            border: 10px solid;
+            border-radius: 20px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+            <div class="topnav">
+        <a href="Index.html" >Home</a>
+        <a href="AboutUs.html" class="active">AboutUs</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Contant.html">Contact</a>
+    </div>
+        <div class="bg-image img2"></div>
+        <div class="bg-image img3"></div>
+        <div class="bg-image img4"></div>
+        <div class="bg-image img5"></div>
+        <div class="bg-image img1"></div>
+
+        <div class="bg-text">Filled with food</div>
+
+    </body>
+</html>
