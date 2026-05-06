@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: aquamarine;
+            font-family:'Times New Roman', Times, serif ;
+            text-align: center;
+        
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: black;
+        }
+        .topnav a{
+            float: left;
+            color: paleturquoise;
+            text-align: center;
+            padding: 12px 10px;
+            font-size: 17px;
+            text-decoration: none;
+        }
+        .topnav a:hover{
+            color: blueviolet;
+            font-size: 20px;
+        }
+        .topnav a.active {
+            background-color: darkblue;
+            color: aqua;
+        }
+        .contact{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate("-50%,-50%");
+
+            background-color: crimson;
+            color: white;
+            width: 300px;
+            text-align: center;
+            border-radius: 40px;
+            border: 20px solid brown;
+        }
+        input[type=submit]{
+            background-color: azure;
+            color: crimson;
+        }
+        input[type=submit]:hover{
+            background-color: coral;
+            width: 104%;
+            height: 30px;
+            font-size: 21px;
+        }
+        textarea:focus{
+            background-color: lightblue;
+        }
+        h1 {
+            font-size: 48px;
+            color: rgb(220, 213, 20);
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="Index.html" class="active">Home</a>
+        <a href="AboutUs.html">AboutUs</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Contant.html">Contact</a>
+    </div>
+    <div class="contact">
+        <form name="forml">
+            <label for="fname">Name</label>
+            <br><br>
+
+            <input type="text" name = "fname">
+            <br><br>
+
+            <label for="email"> Email </label>
+            <br><br>
+
+            <input type="email" name = "email">
+            <br><br>
+
+            <label for="phone"> Contact no</label>   
+            <br><br>
+
+            <input type="text" name = "phone">
+            <br><br>
+
+            <label>Type your Question</label><br><br>
+
+            <input type="submit" >
+    </div>
+</body>
+</html>
